@@ -1,0 +1,1 @@
+this repository was use for myself or my good friend commit the project,and it is had three fold. one of the fold is that branch ,this is use to fix bug when project was online. one of the fold is that tags ,it is use for project who was online and do not edit. one of fold is that trunk ,it is use for project which is developing.
