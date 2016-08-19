@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:text="该事例用于测试增量更新，操作步骤：
+        1、点击生成差分包按钮，在sd卡aDiff中生成增量包(.patch文件）；
+        2、点击合成差分包按钮，在sd卡aDiff中生成合成包（.apk文件）；
+        3、点击安装按钮，将aDiff中生成的.apk文件安装到手机。" />
+
+    <Button
+        android:id="@+id/btnInstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMix"
+        android:layout_alignBottom="@+id/btnMix"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="66dp"
+        android:text="安装apk" />
+
+    <Button
+        android:id="@+id/btnMix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCreate"
+        android:layout_alignBottom="@+id/btnCreate"
+        android:layout_centerHorizontal="true"
+        android:text="合成差分包" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="44dp"
+        android:layout_toLeftOf="@+id/btnMix"
+        android:text="生成差分包" />
+
+</RelativeLayout>
